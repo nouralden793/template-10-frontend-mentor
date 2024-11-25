@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book-Mark Landing Page</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+  </head>
+  <body>
+    <header
+      class="header fixed top-0 left-0 w-full bg-white py-5 transition-all duration-300 z-50"
+    >
+      <div class="container flex items-center justify-between">
+        <div class="logo cursor-pointer z-[999]">
+          <img src="./images/logo-bookmark.svg" alt="" />
+        </div>
+        <img
+          src="./images/icon-hamburger.svg"
+          class="burger cursor-pointer z-[999] w-[30px] sm:hidden"
+          alt=""
+        />
+        <ul
+          class="mobile z-50 absolute top-[70px] left-[1%] shadow-mobile bg-white w-[98%] flex-col items-center flex transition-all duration-300 scale-y-0 origin-top"
+        >
+          <li><a href="#features">FEATURES</a></li>
+          <li><a href="#pricing">PRICING</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><button type="button">LOGIN</button></li>
+          <li>
+            <img src="./images/icon-facebook.svg" alt="" />
+            <img src="./images/icon-twitter.svg" alt="" />
+          </li>
+        </ul>
+        <ul class="hidden gap-5 items-center sm:flex">
+          <li><a href="#features">FEATURES</a></li>
+          <li><a href="#pricing">PRICING</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><button type="button">LOGIN</button></li>
+        </ul>
+      </div>
+    </header>
+    <section
+      class="landing flex items-center h-fit justify-between md:pt-[85px] md:h-[95vh]"
+    >
+      <div
+        class="container flex flex-col-reverse gap-9 items-center justify-between md:flex-row"
+      >
+        <div class="text">
+          <h1 class="text-3xl font-bold text-center md:text-left md:text-4xl">
+            A Simple Bookmark <br />
+            Manager
+          </h1>
+          <p class="text-gray-500 my-5 text-center md:text-left">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div
+            class="btns flex items-center gap-5 justify-center md:justify-normal"
+          >
+            <button class="chrome">Get it on Chrome</button>
+            <button class="firefox">Get it on Firefox</button>
+          </div>
+        </div>
+        <div class="image mt-[110px] relative md:mt-0">
+          <img
+            src="./images/illustration-hero.svg"
+            class="w-[500px] md:w-[940px]"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="features my-[200px]" id="features">
+      <div class="container">
+        <h1 class="head text-center text-4xl font-bold">Features</h1>
+        <p
+          class="text ml-[50%] -translate-x-[50%] text-center text-gray-500 max-w-[400px] pt-5"
+        >
+          Our aim IS to make it quick and easy for you to access your favourite
+          websites. Your bookmarks Sync your devices so you can access them On
+          the go.
+        </p>
+      </div>
+      <div class="tabs mt-12">
+        <div
+          class="nav flex items-center flex-col justify-center mb-10 md:flex-row"
+        >
+          <p class="active" data-sec=".simple">Simple Bookmarking</p>
+          <p data-sec=".speedy">Speedy Searching</p>
+          <p data-sec=".easy">Easy Sharing</p>
+        </div>
+        <div class="simple appear">
+          <div class="container">
+            <div class="image">
+              <img src="./images/illustration-features-tab-1.svg" alt="" />
+            </div>
+            <div class="text">
+              <h1>Bookmark in one click</h1>
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button class="info">More Info</button>
+            </div>
+          </div>
+        </div>
+        <div class="speedy">
+          <div class="container">
+            <div class="image">
+              <img src="./images/illustration-features-tab-2.svg" alt="" />
+            </div>
+            <div class="text">
+              <h1>Intelligent search</h1>
+              <p>
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <button class="info">More Info</button>
+            </div>
+          </div>
+        </div>
+        <div class="easy">
+          <div class="container">
+            <div class="image">
+              <img src="./images/illustration-features-tab-3.svg" alt="" />
+            </div>
+            <div class="text">
+              <h1>Share your bookmarks</h1>
+              <p>
+                Easily share your bookmarks and collections with others, Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <button class="info">More Info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="download my-[200px]" id="download">
+      <div class="container">
+        <h1 class="head text-center text-4xl font-bold">
+          Download the extension
+        </h1>
+        <p
+          class="text ml-[50%] -translate-x-[50%] text-center text-gray-500 max-w-[400px] pt-5"
+        >
+          We've got more browsers in the pipeline. Please do let us know if
+          you've got a favourite you'd like us to prioritize.
+        </p>
+      </div>
+      <div
+        class="container flex items-center justify-center flex-wrap gap-10 py-[120px]"
+      >
+        <div class="box relative md:bottom-[80px]">
+          <div class="head">
+            <div class="image">
+              <img src="./images/logo-chrome.svg" alt="" />
+            </div>
+            <h1>Add to Chrome</h1>
+            <p>Minimum version 62</p>
+          </div>
+          <img src="./images/bg-dots.svg" alt="" />
+          <div class="btn">
+            <button type="button" class="install">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+        <div class="box relative md:bottom-[40px]">
+          <div class="head">
+            <div class="image">
+              <img src="./images/logo-firefox.svg" alt="" />
+            </div>
+            <h1>Add to Firefox</h1>
+            <p>Minimum version 55</p>
+          </div>
+          <img src="./images/bg-dots.svg" alt="" />
+          <div class="btn">
+            <button type="button" class="install">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="head">
+            <div class="image">
+              <img src="./images/logo-opera.svg" alt="" />
+            </div>
+            <h1>Add to Opera</h1>
+            <p>Minimum version 46</p>
+          </div>
+          <img src="./images/bg-dots.svg" alt="" />
+          <div class="btn">
+            <button type="button" class="install">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq my-[150px]">
+      <div class="container">
+        <h1 class="head text-center text-4xl font-bold">
+          Frequently Asked Questions
+        </h1>
+        <p
+          class="text ml-[50%] -translate-x-[50%] text-center text-gray-500 max-w-[400px] pt-5"
+        >
+          Here are some of our FAQs. If you have any other questions you'd like
+          answered please feel free to email us.
+        </p>
+      </div>
+      <div class="container faqContainer mt-[30px] max-w-[600px]"></div>
+      <button type="button" class="info">More Info</button>
+    </section>
+    <section class="contact bg-main pt-[30px] pb-[50px]" id="contact">
+      <div class="container">
+        <p
+          class="text ml-[50%] -translate-x-[50%] text-center text-white max-w-[400px] pt-5 tracking-[5px] mb-[30px]"
+        >
+          35.000+ ALREADY JOINED
+        </p>
+        <h1 class="head text-center text-4xl font-bold text-white">
+          Stay up-to-date with what <br />
+          we're doing
+        </h1>
+      </div>
+      <div class="container flex items-center justify-center mt-[40px]">
+        <form
+          action=""
+          class="relative flex items-start justify-center flex-col gap-5 sm:flex-row"
+        >
+          <div
+            class="input relative bg-red bg-transparent rounded-md border-2 border-none border-red overflow-hidden"
+          >
+            <input
+              type="email"
+              placeholder="Enter Your Email Address"
+              class="px-4 py-2 rounded-md bg-white border-2 shadow-lg border-white transition-all duration-300 w-[300px] relative pr-[50px] hover:border-red"
+            />
+            <p class="i">!</p>
+            <p class="decline">Whoops. make sure it's an email</p>
+          </div>
+          <button type="submit" class="contactBtn shadow-lg">Contact Us</button>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-[#242946]">
+      <div
+        class="container py-3 flex justify-between items-center flex-col gap-5 sm:gap-0 sm:flex-row"
+      >
+        <div class="flex gap-5 flex-col sm:flex-row">
+          <div class="logo relative">
+            <img src="./images/logo-bookmark.svg" alt="" />
+            <p
+              class="absolute top-[50%] -translate-y-[50%] left-[25%] text-lg text-white"
+            >
+              BOOKMARK
+            </p>
+          </div>
+          <ul class="flex gap-4 items-center text-white flex-col sm:flex-row">
+            <li>
+              <a class="hover:text-red cursor-pointer" href="#features"
+                >FEATURES</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-red cursor-pointer" href="#pricing"
+                >PRICING</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-red cursor-pointer" href="#contact"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex gap-6">
+          <img src="./images/icon-facebook.svg" class="cursor-pointer" alt="" />
+          <img src="./images/icon-twitter.svg" class="cursor-pointer" alt="" />
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
